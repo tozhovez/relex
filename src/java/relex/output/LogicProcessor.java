@@ -324,11 +324,7 @@ public class LogicProcessor
 
 		for (String appliedRule : appliedRules)
 		{
-			/*for (String mutuallyExclusiveRule: relexRule.getMutuallyExclusiveRuleNames())
-			{
-				if (appliedRule.equalsIgnoreCase(mutuallyExclusiveRule))
-					bNotMutuallyExclusive = false;
-			}*/
+
 			if(relexRule.isRuleMutuallyExlusive(appliedRule)){
 				bNotMutuallyExclusive = false;
 			}
